@@ -1,0 +1,7 @@
+interface:
+  display_name: "Elementary Math Unit Map"
+  short_description: "小4-小6算数の単元を地図化して組み合わせで説明する"
+  default_prompt: "Use $elementary-math-unit-map to identify which grade 4-6 elementary math units this problem combines and explain the solution as a combination of those units."
+
+policy:
+  allow_implicit_invocation: true

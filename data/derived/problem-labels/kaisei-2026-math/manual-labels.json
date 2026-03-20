@@ -1,0 +1,619 @@
+{
+  "taxonomy_namespace": "provisional_math_v2026_kaisei_review_v1",
+  "status": "draft",
+  "spot_check_candidates": [
+    "問1(3)",
+    "問2(2)(b)",
+    "問3(1)",
+    "問4(3)"
+  ],
+  "global_issues": [
+    {
+      "display_id": "問1(3)",
+      "kind": "ocr_spot_check",
+      "note": "秒数 OCR が崩れているため、解答画像で最終確認が必要。"
+    },
+    {
+      "display_id": "問4(3)",
+      "kind": "answer_interpretation",
+      "note": "解答図は一意ではない。面積と個数の組で確認する。"
+    }
+  ],
+  "records": [
+    {
+      "display_id": "問1(1)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.motion.variable-length-graph",
+          "name": "動点の長さ変化グラフ"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.motion.moving-point-geometry",
+            "name": "動点"
+          },
+          {
+            "code": "s.math.geometry.line-intersection-relations",
+            "name": "交点位置の関係整理"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.8,
+        "rationale": "求めるのは ER の時間変化そのもののグラフで、P・Q の折り返しごとに変化率が切り替わる点を整理して折れ線化する問題です。図形関係は必要ですが、主眼は動点を1量の変化へ落として追うことにあります。",
+        "uncertainty": "ER の導出根拠を副ラベルで『相似・線分比』寄りに切る余地はありますが、要約上はグラフ化が主です。"
+      },
+      "learning_map": {
+        "main_unit": "変わり方（小4）",
+        "supporting_units": [
+          "比例（小5）",
+          "垂直・平行と四角形（小4）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "表にする"
+        ],
+        "advanced_labels": [
+          "動点"
+        ]
+      }
+    },
+    {
+      "display_id": "問1(2)(a)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.motion.area-condition-on-graph",
+          "name": "動点面積条件のグラフ判定"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.motion.moving-point-geometry",
+            "name": "動点"
+          },
+          {
+            "code": "s.math.representation.graph-reading",
+            "name": "グラフ読解"
+          }
+        ],
+        "difficulty": {
+          "level": 3,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.88,
+        "rationale": "△EPQ=300 を ER=20 に言い換え、既に得た ER グラフから時刻を読む小問です。面積公式は入口で、主眼は面積条件を長さ条件へ変換して動点グラフに接続することです。",
+        "uncertainty": "『面積』主導か『動点グラフ活用』主導かは境界ですが、条件変換まで含む複合型として扱いました。"
+      },
+      "learning_map": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "変わり方（小4）",
+          "比例（小5）"
+        ],
+        "cross_skills": [
+          "同じ土俵にそろえる",
+          "図にする"
+        ],
+        "advanced_labels": [
+          "動点"
+        ]
+      }
+    },
+    {
+      "display_id": "問1(2)(b)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.motion.area-condition-on-graph",
+          "name": "動点面積条件のグラフ判定"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.motion.moving-point-geometry",
+            "name": "動点"
+          },
+          {
+            "code": "s.math.pattern.periodicity",
+            "name": "周期性"
+          }
+        ],
+        "difficulty": {
+          "level": 3,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.84,
+        "rationale": "本質は(2)(a)と同じく面積300を ER=20 に直して該当時刻を拾うことですが、30秒以降へ同型の変化を延長して数える整理が加わります。",
+        "uncertainty": "後半の扱いを『周期算』寄りに強く立てる余地はありますが、ここでは規則延長を副ラベルにとどめました。"
+      },
+      "learning_map": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "変わり方（小4）",
+          "比例（小5）"
+        ],
+        "cross_skills": [
+          "同じ土俵にそろえる",
+          "規則性を見つける"
+        ],
+        "advanced_labels": [
+          "動点"
+        ]
+      }
+    },
+    {
+      "display_id": "問1(3)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.motion.two-length-difference-area-condition",
+          "name": "2動点の差でみる面積条件"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.motion.moving-point-geometry",
+            "name": "動点"
+          },
+          {
+            "code": "s.math.quantity.length-difference-condition",
+            "name": "長さの差の条件整理"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.86,
+        "rationale": "△PQS=300 を |ER-ES|=20 に落とし、2本の動く長さの差が一定になる時刻を追う問題です。面積変換に加えて、2量比較へ整理し直す発想が中心です。",
+        "uncertainty": "図の詳細次第で副ラベルを『相似・線分比』へ寄せる余地はありますが、要約上は差の条件整理が主です。"
+      },
+      "learning_map": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "変わり方（小4）",
+          "比例（小5）"
+        ],
+        "cross_skills": [
+          "同じ土俵にそろえる",
+          "図にする"
+        ],
+        "advanced_labels": [
+          "動点"
+        ]
+      }
+    },
+    {
+      "display_id": "問2(1)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.fractions.digit-arrangement-max",
+          "name": "分数の数字配置最大化"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.number.place-value-arrangement",
+            "name": "位取りを使う数字配置"
+          }
+        ],
+        "difficulty": {
+          "level": 2,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.95,
+        "rationale": "最小分母12と最大4桁分子9876を作る大小判断が核心で、計算そのものより分数の大小と位取りの組合せで解く典型的な最大化です。",
+        "uncertainty": "『数の並べ方』を主に置く見方もありますが、価値判断の軸は分数の大小です。"
+      },
+      "learning_map": {
+        "main_unit": "分数（小5）",
+        "supporting_units": [
+          "大きい数（小4）"
+        ],
+        "cross_skills": [
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "最大最小"
+        ]
+      }
+    },
+    {
+      "display_id": "問2(2)(a)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.fractions.sum-max-with-digit-arrangement",
+          "name": "分数和の数字配置最大化"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.number.place-value-arrangement",
+            "name": "位取りを使う数字配置"
+          },
+          {
+            "code": "s.math.logic.case-analysis",
+            "name": "場合分け"
+          }
+        ],
+        "difficulty": {
+          "level": 3,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.9,
+        "rationale": "2つの分数の和を最大にするため、どの分母配置が最も効くかを見て大きい数字を分子側に配る問題です。分数比較に配置最適化が重なります。",
+        "uncertainty": "『場合の数』をどこまで強く立てるかは迷いますが、総当たりより有利な配置判断が主です。"
+      },
+      "learning_map": {
+        "main_unit": "分数（小5）",
+        "supporting_units": [
+          "大きい数（小4）"
+        ],
+        "cross_skills": [
+          "条件整理",
+          "場合分け"
+        ],
+        "advanced_labels": [
+          "最大最小"
+        ]
+      }
+    },
+    {
+      "display_id": "問2(2)(b)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.fractions.threshold-search-with-digit-arrangement",
+          "name": "分数和の条件付き配置探索"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.number.place-value-arrangement",
+            "name": "位取りを使う数字配置"
+          },
+          {
+            "code": "s.math.logic.reverse-reasoning",
+            "name": "逆向きの条件整理"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.89,
+        "rationale": "17未満という閾値条件の下で、値を下げるために大きい数字を分母へ送る逆向き発想と候補の絞り込みが必要です。単純最大化より一段難しいです。",
+        "uncertainty": "『唯一性確認』を副ラベル化する余地はありますが、核は逆向きの配置最適化と見ました。"
+      },
+      "learning_map": {
+        "main_unit": "分数（小5）",
+        "supporting_units": [
+          "大きい数（小4）"
+        ],
+        "cross_skills": [
+          "逆に考える",
+          "場合分け",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "最大最小"
+        ]
+      }
+    },
+    {
+      "display_id": "問3(1)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.solid-cross-sections",
+          "name": "立体切断"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.solid-spatial-visualization",
+            "name": "立体の位置関係把握"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.84,
+        "rationale": "切り口の斜線位置は、断面図を直接読むのでなく、切断面がどの三角柱を通るかを立体の対応関係で追って決める問題で、中心は切断面の確定にある。",
+        "uncertainty": "見取り図の対応把握を主ラベルに寄せる案もあるが、問いの核はあくまで切断面の決定なので立体切断を主にした。"
+      },
+      "learning_map": {
+        "main_unit": "立体（小5）",
+        "supporting_units": [
+          "直方体と立方体（小4）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "立体切断"
+        ]
+      }
+    },
+    {
+      "display_id": "問3(2)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.cut-solid-volume",
+          "name": "切断立体の体積"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.solid-cross-sections",
+            "name": "立体切断"
+          },
+          {
+            "code": "s.math.volume-composition",
+            "name": "体積の分割・合成"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.86,
+        "rationale": "D を含む側に残る黒部分だけを切断後の立体から抽出し、必要部分の体積を分けて合計する構造で、評価対象は体積そのもの。",
+        "uncertainty": "切断面追跡の負荷は大きいが、最終的に問われる量と解法の締めが体積合成なので主ラベルは体積側を優先した。"
+      },
+      "learning_map": {
+        "main_unit": "体積（小5）",
+        "supporting_units": [
+          "立体（小5）",
+          "直方体と立方体（小4）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "立体切断"
+        ]
+      }
+    },
+    {
+      "display_id": "問4(1)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.area-by-dissection",
+          "name": "小図形分割による面積"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.congruent-figures",
+            "name": "合同な図形"
+          },
+          {
+            "code": "s.math.regular-hexagon-decomposition",
+            "name": "正六角形の分割"
+          }
+        ],
+        "difficulty": {
+          "level": 3,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.77,
+        "rationale": "A は小正三角形何個分かへ分けて面積を出すのが解法の入口で、合同な図形の個数確認はそのあとに続く第2軸です。主眼は小図形分割による面積処理にあります。",
+        "uncertainty": "主眼は面積処理で、合同な個数の確認は第2軸と見るのが `index.html` に最も合います。"
+      },
+      "learning_map": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "合同な図形（小5）",
+          "正多角形と円周の長さ（小5）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "規則性を見つける"
+        ],
+        "advanced_labels": [
+          "図形の数え上げ"
+        ]
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "主ラベルを面積側へ寄せ、learning_map も site の mainUnit に合わせて調整済み。",
+        "residual_uncertainty": "検索用途で『図形の数え上げ』を強く拾いたいなら旧主ラベルも完全には外れませんが、学習導線としては面積先行が優勢です。"
+      }
+    },
+    {
+      "display_id": "問4(2)(a)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.area-by-dissection",
+          "name": "小図形分割による面積"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.regular-hexagon-decomposition",
+            "name": "正六角形の分割"
+          }
+        ],
+        "difficulty": {
+          "level": 2,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.91,
+        "rationale": "B の面積は、小正三角形を基準単位にして何個分かを数えればよく、中心技法は図形分割による面積処理。",
+        "uncertainty": "ほぼ迷いはなく、合同判定は補助的で主たる処理ではない。"
+      },
+      "learning_map": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "正多角形と円周の長さ（小5）"
+        ],
+        "cross_skills": [
+          "図にする"
+        ],
+        "advanced_labels": [
+          "図形分割"
+        ]
+      }
+    },
+    {
+      "display_id": "問4(2)(b)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.conditioned-geometry-counting",
+          "name": "条件付き図形の数え上げ"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.congruent-figures",
+            "name": "合同な図形"
+          },
+          {
+            "code": "s.math.point-inclusion-conditions",
+            "name": "点を内部にふくむ条件判定"
+          }
+        ],
+        "difficulty": {
+          "level": 3,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.85,
+        "rationale": "B と合同な三角形の中から、点 P を内部に含むものだけを落ちなく拾う問題で、中心は条件付きの図形数え上げ。",
+        "uncertainty": "合同判定の比重もあるが、設問の差を生んでいるのは『P を内部に含む』という条件なので主ラベルは数え上げ側に置いた。"
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "合同な図形（小5）"
+        ],
+        "cross_skills": [
+          "条件整理",
+          "図にする",
+          "場合分け"
+        ],
+        "advanced_labels": [
+          "図形の数え上げ"
+        ]
+      }
+    },
+    {
+      "display_id": "問4(2)(c)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.conditioned-geometry-counting",
+          "name": "条件付き図形の数え上げ"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.congruent-figures",
+            "name": "合同な図形"
+          },
+          {
+            "code": "s.math.point-inclusion-conditions",
+            "name": "点を内部にふくむ条件判定"
+          }
+        ],
+        "difficulty": {
+          "level": 3,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.86,
+        "rationale": "問4(2)(b) と同型で、基準点を Q に替えて内部条件を満たす B 型だけを数える問題なので、やはり条件付きの図形数え上げが中心。",
+        "uncertainty": "P と Q で局所構造が少し異なるため難度感は微調整余地があるが、分類軸自体は安定している。"
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "合同な図形（小5）"
+        ],
+        "cross_skills": [
+          "条件整理",
+          "図にする",
+          "場合分け"
+        ],
+        "advanced_labels": [
+          "図形の数え上げ"
+        ]
+      }
+    },
+    {
+      "display_id": "問4(2)(d)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.congruence-class-geometry-counting",
+          "name": "合同類でまとめる図形の数え上げ"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.congruent-figures",
+            "name": "合同な図形"
+          },
+          {
+            "code": "s.math.symmetry-regularity-counting",
+            "name": "対称性・規則性を使う数え上げ"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.8,
+        "rationale": "B と合同な三角形全体を重複なく数えるには、個別列挙よりも同じ合同類の配置パターンと対称性を使って全体へ広げる必要がある。",
+        "uncertainty": "条件付き数え上げの延長として見ることもできるが、この小問では P・Q の条件より総数化と重複除去が主テーマ。"
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "合同な図形（小5）",
+          "対称な図形（小6）"
+        ],
+        "cross_skills": [
+          "規則性を見つける",
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "図形の数え上げ"
+        ]
+      }
+    },
+    {
+      "display_id": "問4(3)",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.congruence-class-geometry-counting",
+          "name": "合同類でまとめる図形の数え上げ"
+        },
+        "secondary_labels": [
+          {
+            "code": "s.math.area-by-unit-triangles",
+            "name": "小図形分割による面積"
+          },
+          {
+            "code": "s.math.symmetry-regularity-counting",
+            "name": "対称性・規則性を使う数え上げ"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_5_v1"
+        },
+        "confidence": 0.78,
+        "rationale": "A 型・B 型以外を合同類ごとに切り分け、その各類に面積と個数を対応させる問題で、まず合同類を立ててから面積と総数を整理する必要がある。",
+        "uncertainty": "面積と場合の数の複合問題でもあるが、何を1種類とみなすかの合同類整理が解法の入口なのでそこを主ラベルに据えた。"
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "合同な図形（小5）",
+          "面積（小5）"
+        ],
+        "cross_skills": [
+          "条件整理",
+          "図にする",
+          "規則性を見つける"
+        ],
+        "advanced_labels": [
+          "図形の数え上げ",
+          "合同類整理"
+        ]
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "search_labels は維持し、learning_map だけ数え上げ寄りに補正済み。",
+        "residual_uncertainty": "taxonomy を『解法入口』重視で切るなら現行の合同主軸もありえますが、site の学習マップとは少しずれます。"
+      }
+    }
+  ]
+}

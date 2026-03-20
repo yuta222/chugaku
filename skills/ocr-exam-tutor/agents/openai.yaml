@@ -1,0 +1,4 @@
+interface:
+  display_name: "OCR Exam Tutor"
+  short_description: "OCR入試問題を4教科で初学者向けに解く解説スキル"
+  default_prompt: "Use $ocr-exam-tutor to solve OCR-derived exam questions with beginner-friendly explanations, keywords, and embedded problem images in Markdown."

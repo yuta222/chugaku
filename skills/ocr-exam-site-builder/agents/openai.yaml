@@ -1,0 +1,7 @@
+interface:
+  display_name: "OCR Exam Site Builder"
+  short_description: "OCR入試から解答解説のHTMLページを検証付きで作る"
+  default_prompt: "Use $ocr-exam-site-builder to build a local HTML answer-and-explanation site from OCR-derived exam materials and verify it against official answers."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "OCR Exam Beginner Scaffold"
+  short_description: "OCR入試解説を超初心者向けに一歩ずつ組み直す"
+  default_prompt: "Use $ocr-exam-beginner-scaffold to rewrite this OCR-derived exam explanation in a much slower, more beginner-friendly step-by-step format."
+
+policy:
+  allow_implicit_invocation: true

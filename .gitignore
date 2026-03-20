@@ -1,0 +1,11 @@
+.env
+data/
+__pycache__/
+*.pyc
+.DS_Store
+apps/admin/node_modules/
+apps/admin/dist/
+apps/api/vendor/
+apps/api/storage/
+apps/api/bootstrap/cache/
+apps/api/public/admin/

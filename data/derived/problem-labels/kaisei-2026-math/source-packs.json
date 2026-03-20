@@ -1,0 +1,913 @@
+[
+  {
+    "display_id": "問1(1)",
+    "problem_code": "q1_1",
+    "sort_order": 1,
+    "section_id": "part1",
+    "section_title": "大問1 動点と面積",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "4ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0004.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "点Rの点Eからの距離のグラフ。",
+      "official_answer": "グラフ",
+      "verified_answer": "解答画像の折れ線グラフと一致",
+      "explanation_summary": "主な折れ点は `(0,15) → (3,18) → (5,10) → (9,6) → (15,30) → (21,6) → (25,10) → (27,18) → (30,15)` と整理できます。",
+      "knowledge_points": [
+        "動く点を『時間と長さ』で表す練習。",
+        "交点の位置を比や平均の形で見る考え方。",
+        "グラフの折れ点は、動き方が変わる時刻に出ること。"
+      ],
+      "method_outline": [
+        "PとQがどの辺をどの速さで動くかを、時間ごとに整理します。",
+        "ER が増える区間と減る区間に分けて、折れ点の値を出します。",
+        "折れ点どうしを順につないで折れ線グラフにします。"
+      ],
+      "reasoning_why": [
+        "点Rの場所そのものを追うより、ER という1本の長さにしぼると考える量が1つになります。",
+        "PやQが同じ動き方をしている区間では ER も一定の速さで変わるので、グラフは直線でつなげます。"
+      ],
+      "lesson_points": [
+        "点Rは直線 PQ と EG の交点なので、P と Q の位置関係から ER を表せます。",
+        "折れ線になるのは、P と Q が端で折り返すたびに ER の増え方・減り方が変わるからです。"
+      ],
+      "ocr_notes": [
+        "図形解答なので、最終確認は解答画像ベース。"
+      ],
+      "problem_core": "時間が進むと ER の長さがどんな規則で増減するかを、折れ線グラフで見る問題です。",
+      "learning_map_hint": {
+        "main_unit": "変わり方（小4）",
+        "supporting_units": [
+          "比例（小5）",
+          "垂直・平行と四角形（小4）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "表にする"
+        ],
+        "advanced_labels": [
+          "動点"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問1(2)(a)",
+    "problem_code": "q1_2_a",
+    "sort_order": 2,
+    "section_id": "part1",
+    "section_title": "大問1 動点と面積",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "4ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0004.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "30秒後までで、△EPQ の面積が 300cm² になる回数と時刻。",
+      "official_answer": "2回、12.5秒後・17.5秒後",
+      "verified_answer": "2回、12.5秒後・17.5秒後",
+      "explanation_summary": "△EPQ の面積は `15 × ER` に整理できるので、面積300は `ER=20` のときです。",
+      "knowledge_points": [
+        "三角形の面積を底辺と高さで表すこと。",
+        "面積条件を長さの条件へ言いかえる練習。",
+        "グラフから特定の値になる時刻を読むこと。"
+      ],
+      "method_outline": [
+        "△EPQ の面積を ER で表して、面積300を ER=20 に変えます。",
+        "問1(1)で作ったグラフのうち、ER=20 になる点を探します。",
+        "30秒までに当たる時刻だけを読みます。"
+      ],
+      "reasoning_why": "面積を毎回計算するより、長さERの条件に変えた方が、すでに作ったグラフをそのまま使えて速いからです。",
+      "lesson_points": [
+        "図形をそのまま追い回すより、面積を ER だけの式にする方が速いです。",
+        "一度グラフが作れていれば、ER が 20 になる時刻を読むだけで答えになります。"
+      ],
+      "ocr_notes": [],
+      "problem_core": "面積300を ER の長さ条件に直して、グラフから時刻を読む問題です。",
+      "learning_map_hint": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "変わり方（小4）",
+          "比例（小5）"
+        ],
+        "cross_skills": [
+          "同じ土俵にそろえる",
+          "図にする"
+        ],
+        "advanced_labels": [
+          "動点"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問1(2)(b)",
+    "problem_code": "q1_2_b",
+    "sort_order": 3,
+    "section_id": "part1",
+    "section_title": "大問1 動点と面積",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "4ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0004.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "30秒後から60秒後までで、△EPQ の面積が 300cm² になる回数と時刻。",
+      "official_answer": "4回、35秒後・40秒後・50秒後・55秒後",
+      "verified_answer": "4回、35秒後・40秒後・50秒後・55秒後",
+      "explanation_summary": "30秒以降も ER の周期性を追うと、同じ面積条件を満たす時刻が4回現れます。",
+      "knowledge_points": [
+        "前半で作ったグラフや規則を後半へ延長する見方。",
+        "同じ動きがくり返されるときの読み取り。"
+      ],
+      "method_outline": [
+        "30秒以降も ER の増減を前半と同じ型で延長します。",
+        "その中で ER=20 になる点だけを拾います。",
+        "30秒から60秒の範囲に入る時刻を数えます。"
+      ],
+      "reasoning_why": "後半だけ別の式を作るより、前半のグラフの型をそのまま伸ばす方がミスが少なく、条件も見落としにくいからです。",
+      "lesson_points": [],
+      "ocr_notes": [],
+      "problem_core": "前半で作った ER グラフを後半へ延長し、同じ面積条件を満たす時刻を探す問題です。",
+      "learning_map_hint": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "変わり方（小4）",
+          "比例（小5）"
+        ],
+        "cross_skills": [
+          "同じ土俵にそろえる",
+          "図にする"
+        ],
+        "advanced_labels": [
+          "動点"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問1(3)",
+    "problem_code": "q1_3",
+    "sort_order": 4,
+    "section_id": "part1",
+    "section_title": "大問1 動点と面積",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "4ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0004.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "点Sも加えたとき、△PQS の面積が 300cm² になる回数と時刻。",
+      "official_answer": "解答画像上では同じ",
+      "verified_answer": "2回、43と1/3秒後・46と2/3秒後",
+      "explanation_summary": "点Sは EG 上を動くので、△PQS の面積は `15 × |ER-ES|` と見られます。これが 300 だから `|ER-ES|=20` を解けばよいです。",
+      "knowledge_points": [
+        "2つの長さの差を絶対値で表すこと。",
+        "面積を『高さの差』に置きかえる見方。",
+        "動点を同じ基準線上の長さにそろえること。"
+      ],
+      "method_outline": [
+        "RとSをどちらも EG からの長さ ER, ES で表します。",
+        "面積300を |ER-ES|=20 に言いかえます。",
+        "差が20になる時刻を追って答えを決めます。"
+      ],
+      "reasoning_why": "点が2つ出てきても、同じ基準線EGからのずれにそろえると、比べる量がERとESだけになって整理しやすいからです。",
+      "lesson_points": [
+        "新しい点Sが増えても、『基準線 EG からのずれ』で考えると式の形は保てます。",
+        "OCR はこの時刻が崩れているので、秒数は解答画像で最終確認するのが安全です。"
+      ],
+      "ocr_notes": [
+        "OCR では `43g秒後` のように崩れています。文字だけを信用しない方が安全です。"
+      ],
+      "problem_core": "2本の長さ ER と ES の差で面積条件を表し、その差が一定になる時刻を探す問題です。",
+      "learning_map_hint": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "変わり方（小4）",
+          "比例（小5）"
+        ],
+        "cross_skills": [
+          "同じ土俵にそろえる",
+          "図にする"
+        ],
+        "advanced_labels": [
+          "動点"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問2(1)",
+    "problem_code": "q2_1",
+    "sort_order": 5,
+    "section_id": "part2",
+    "section_title": "大問2 数字の並べ方",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "6ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0006.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "分数を最大にする数字の入れ方。",
+      "official_answer": "9876 / 12",
+      "verified_answer": "9876 / 12",
+      "explanation_summary": "最小の分母 12 に対して、最大の4桁数 9876 を分子に置くのが最善です。",
+      "knowledge_points": [
+        "分数は分母が小さいほど大きくなりやすいこと。",
+        "4桁の数は、大きい数字を高い位に置くと大きくなること。"
+      ],
+      "method_outline": [
+        "まず作れるいちばん小さい2桁の分母12を決めます。",
+        "残りの数字を大きい順に並べて、4桁の分子を最大にします。"
+      ],
+      "reasoning_why": "この問題では分母の大小の影響がとても大きいので、先に最小の分母を固定し、そのあと分子を最大化するのが最短だからです。",
+      "lesson_points": [
+        "まず分母を最も小さく作れる `12` に固定します。",
+        "残りの大きい数字を大きい位から分子に並べれば、4桁数も最大になります。"
+      ],
+      "ocr_notes": [],
+      "problem_core": "分母をできるだけ小さく、分子をできるだけ大きくして分数を最大にする問題です。",
+      "learning_map_hint": {
+        "main_unit": "分数（小5）",
+        "supporting_units": [
+          "大きい数（小4）"
+        ],
+        "cross_skills": [
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "最大最小"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問2(2)(a)",
+    "problem_code": "q2_2_a",
+    "sort_order": 6,
+    "section_id": "part2",
+    "section_title": "大問2 数字の並べ方",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "6ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0006.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "分数の和を最大にする数字の入れ方。",
+      "official_answer": "9864 / 12 + 75 / 3",
+      "verified_answer": "9864 / 12 + 75 / 3",
+      "explanation_summary": "小さい分母 12 と 3 に対して、できるだけ大きい数字を分子側へ配ると和が最大になります。",
+      "knowledge_points": [
+        "分数の和でも、分母が小さい項の影響が大きいこと。",
+        "大きい数字は『値に効く場所』へ置くと有利なこと。"
+      ],
+      "method_outline": [
+        "小さい分母12と3を優先して作ります。",
+        "大きい数字をできるだけ分子側へ集めます。",
+        "残りの数字で2つの分数を完成させます。"
+      ],
+      "reasoning_why": "同じ数字でも、小さい分母の上に置いた方が全体の値を強く押し上げられるので、まず『効く分母』を押さえるのが大事だからです。",
+      "lesson_points": [],
+      "ocr_notes": [],
+      "problem_core": "2つの分数の和を最大にするため、効く分母に大きい分子を載せる問題です。",
+      "learning_map_hint": {
+        "main_unit": "分数（小5）",
+        "supporting_units": [
+          "大きい数（小4）"
+        ],
+        "cross_skills": [
+          "条件整理",
+          "場合分け"
+        ],
+        "advanced_labels": [
+          "最大最小"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問2(2)(b)",
+    "problem_code": "q2_2_b",
+    "sort_order": 7,
+    "section_id": "part2",
+    "section_title": "大問2 数字の並べ方",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "6ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0006.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "分数の和が 17 より小さくなる唯一の入れ方。",
+      "official_answer": "1356 / 97 + 24 / 8",
+      "verified_answer": "1356 / 97 + 24 / 8",
+      "explanation_summary": "17未満に抑えるには、大きい数字を分母へ回して全体の値を強く下げる必要があります。",
+      "knowledge_points": [
+        "条件つきの最大・最小は、ふつうの場合の逆向きも考えること。",
+        "分母を大きくすると値が下がること。",
+        "候補を試してしぼる整理の仕方。"
+      ],
+      "method_outline": [
+        "17未満にするには、大きい数字を分母へ送ると決めます。",
+        "特に97を分母に置く案を先に試します。",
+        "残りの数字を入れて、17未満になる唯一の形を確認します。"
+      ],
+      "reasoning_why": "そのまま最大化の発想で並べると値が大きくなりすぎるので、『どこで大きく下げるか』を最初に決める必要があるからです。",
+      "lesson_points": [
+        "最大化とは逆に、ここでは『いかに値を下げるか』を考えます。",
+        "大きい 97 を分母に置くことで、大きな4桁分子でも全体を十分小さくできます。"
+      ],
+      "ocr_notes": [],
+      "problem_core": "和を17未満へ下げるため、どこで値を大きく下げるかを決める問題です。",
+      "learning_map_hint": {
+        "main_unit": "分数（小5）",
+        "supporting_units": [
+          "大きい数（小4）"
+        ],
+        "cross_skills": [
+          "逆に考える",
+          "場合分け",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "最大最小"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問3(1)",
+    "problem_code": "q3_1",
+    "sort_order": 8,
+    "section_id": "part3",
+    "section_title": "大問3 三角柱で作る立方体",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "8ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0008.png"
+        },
+        {
+          "label": "9ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0009.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "切り口に現れる黒い部分の斜線。",
+      "official_answer": "斜線図",
+      "verified_answer": "解答画像の斜線図と一致",
+      "explanation_summary": "黒い三角柱が断面でどこを通るかを上面図対応で追うと、解答画像と同じ斜線配置になります。",
+      "knowledge_points": [
+        "立体の切断を上面図や対応図に戻して考えること。",
+        "断面の色は、元の立体の色を引きつぐこと。",
+        "見えている断面より、通るブロックを先に決めること。"
+      ],
+      "method_outline": [
+        "切断面がどの三角柱を通るかを図2と図3で追います。",
+        "その中で黒い三角柱だけを選びます。",
+        "選んだ部分を断面図に写して斜線を付けます。"
+      ],
+      "reasoning_why": "断面だけ見て色を決めると当てずっぽうになりやすいですが、元のブロックを追えば色は必ず一つに決まるからです。",
+      "lesson_points": [],
+      "ocr_notes": [
+        "文字答案ではなく図形答案。最終確認は解答画像ベース。"
+      ],
+      "problem_core": "切断面そのものではなく、元の三角柱の色から断面の黒い部分を決める問題です。",
+      "learning_map_hint": {
+        "main_unit": "立体（小5）",
+        "supporting_units": [
+          "直方体と立方体（小4）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "立体切断"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問3(2)",
+    "problem_code": "q3_2",
+    "sort_order": 9,
+    "section_id": "part3",
+    "section_title": "大問3 三角柱で作る立方体",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "8ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0008.png"
+        },
+        {
+          "label": "9ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0009.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "点Dをふくむ立体Wの黒い部分の体積。",
+      "official_answer": "40cm³",
+      "verified_answer": "40cm³",
+      "explanation_summary": "切断後に D を含む側だけを見て、黒い三角柱由来の部分を数えると 40cm³ です。",
+      "knowledge_points": [
+        "体積は部分に分けて足すこと。",
+        "切断後は必要な側だけを見る整理。",
+        "色つき部分だけを取り出して数えること。"
+      ],
+      "method_outline": [
+        "Dを含む側だけに対象をしぼります。",
+        "その中で黒い三角柱由来の部分を拾います。",
+        "拾った部分の体積を合計します。"
+      ],
+      "reasoning_why": "全体から考えると白い部分まで混ざりやすいので、最初に『何を数えるか』を固定した方が迷わないからです。",
+      "lesson_points": [],
+      "ocr_notes": [],
+      "problem_core": "切断後の片側だけを見て、黒い部分の体積を足し合わせる問題です。",
+      "learning_map_hint": {
+        "main_unit": "体積（小5）",
+        "supporting_units": [
+          "立体（小5）",
+          "直方体と立方体（小4）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "立体切断"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問4(1)",
+    "problem_code": "q4_1",
+    "sort_order": 10,
+    "section_id": "part4",
+    "section_title": "大問4 正六角形7個の図形",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "10ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0010.png"
+        },
+        {
+          "label": "11ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0011.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "正三角形Aの面積と、Aと合同なものの個数。",
+      "official_answer": "3cm²、12個",
+      "verified_answer": "3cm²、12個",
+      "explanation_summary": "A は小さい正三角形で、面積は 3cm²。合同なものは全部で12個です。",
+      "knowledge_points": [
+        "正六角形を同じ小さい正三角形6個に分けること。",
+        "面積の比と個数の数え上げ。",
+        "合同な図形の意味。"
+      ],
+      "method_outline": [
+        "正六角形1個6cm²から、小正三角形1個1cm²を出します。",
+        "Aがその何個分かを数えて面積を出します。",
+        "同じ形を図全体で重複なく数えます。"
+      ],
+      "reasoning_why": "面積も個数も『小さい同じ三角形何個分か』に直すと、同じ考え方でまとめて処理できるからです。",
+      "lesson_points": [],
+      "ocr_notes": [],
+      "problem_core": "正六角形を小さい正三角形に分け、面積と合同な個数を数える問題です。",
+      "learning_map_hint": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "合同な図形（小5）",
+          "正多角形と円周の長さ（小5）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "規則性を見つける"
+        ],
+        "advanced_labels": []
+      }
+    }
+  },
+  {
+    "display_id": "問4(2)(a)",
+    "problem_code": "q4_2_a",
+    "sort_order": 11,
+    "section_id": "part4",
+    "section_title": "大問4 正六角形7個の図形",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "10ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0010.png"
+        },
+        {
+          "label": "11ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0011.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "二等辺三角形Bの面積。",
+      "official_answer": "5cm²",
+      "verified_answer": "5cm²",
+      "explanation_summary": "正六角形の分割関係を使うと、B の面積は 5cm² になります。",
+      "knowledge_points": [
+        "複雑な図形の面積は小図形に分けて考えること。",
+        "同じ面積の部品を数えること。"
+      ],
+      "method_outline": [
+        "Bを小さい正三角形に分けます。",
+        "何個分あるかを数えます。",
+        "1個1cm²を使って面積を出します。"
+      ],
+      "reasoning_why": "新しい面積公式を探すより、すでにわかっている1cm²の部品で数えた方が確実で、図形の見落としも減るからです。",
+      "lesson_points": [],
+      "ocr_notes": [],
+      "problem_core": "Bを小さい三角形何個分かへ分けて、その面積を求める問題です。",
+      "learning_map_hint": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "合同な図形（小5）"
+        ],
+        "cross_skills": [
+          "図にする"
+        ],
+        "advanced_labels": []
+      }
+    }
+  },
+  {
+    "display_id": "問4(2)(b)",
+    "problem_code": "q4_2_b",
+    "sort_order": 12,
+    "section_id": "part4",
+    "section_title": "大問4 正六角形7個の図形",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "10ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0010.png"
+        },
+        {
+          "label": "11ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0011.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "Bと合同で、点Pを内部にふくむものの個数。",
+      "official_answer": "3個",
+      "verified_answer": "3個",
+      "explanation_summary": "点Pの位置を基準に、B型の三角形が内部にPを含む置き方を数えると3個です。",
+      "knowledge_points": [
+        "条件つき数え上げは、基準になる点から絞ること。",
+        "内部に含むことと、辺の上にあることの違い。"
+      ],
+      "method_outline": [
+        "Bと合同な形のうち、まずPを内部に含むものだけ探します。",
+        "辺上のものを除きます。",
+        "同じ形を重複なく数えます。"
+      ],
+      "reasoning_why": "全部のB型を数えてから選ぶより、Pを基準にした方が見る場所が大きく減って、数え漏れも減るからです。",
+      "lesson_points": [],
+      "ocr_notes": [],
+      "problem_core": "B型のうち、点Pを内部にふくむものだけを絞って数える問題です。",
+      "learning_map_hint": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "合同な図形（小5）"
+        ],
+        "cross_skills": [
+          "場合分け",
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "図形の数え上げ"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問4(2)(c)",
+    "problem_code": "q4_2_c",
+    "sort_order": 13,
+    "section_id": "part4",
+    "section_title": "大問4 正六角形7個の図形",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "10ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0010.png"
+        },
+        {
+          "label": "11ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0011.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "Bと合同で、点Qを内部にふくむものの個数。",
+      "official_answer": "2個",
+      "verified_answer": "2個",
+      "explanation_summary": "点Qの位置で同じ作業をすると2個です。",
+      "knowledge_points": [
+        "基準点を変えても、数え方の型は同じでよいこと。",
+        "内部に含むかどうかの判定。"
+      ],
+      "method_outline": [
+        "今度はQを内部に含むB型だけを探します。",
+        "辺上のものを除きます。",
+        "重複なく数えて個数を出します。"
+      ],
+      "reasoning_why": "Pのときと同じ型で考えると、基準点だけ変えて安定して数え直せるからです。",
+      "lesson_points": [],
+      "ocr_notes": [],
+      "problem_core": "点Qを基準に、B型のうち内部にQをふくむものだけを数える問題です。",
+      "learning_map_hint": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "合同な図形（小5）"
+        ],
+        "cross_skills": [
+          "場合分け",
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "図形の数え上げ"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問4(2)(d)",
+    "problem_code": "q4_2_d",
+    "sort_order": 14,
+    "section_id": "part4",
+    "section_title": "大問4 正六角形7個の図形",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "10ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0010.png"
+        },
+        {
+          "label": "11ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0011.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "Bと合同なもの全体の個数。",
+      "official_answer": "30個",
+      "verified_answer": "30個",
+      "explanation_summary": "PやQを含むものを足場にしながら全体へ広げると、B型は30個あります。",
+      "knowledge_points": [
+        "対称性やくり返しを使う数え上げ。",
+        "重複を防ぐ整理の仕方。"
+      ],
+      "method_outline": [
+        "PやQを含むB型で、配置の規則をつかみます。",
+        "図全体で同じ並びが何回現れるかを追います。",
+        "重複を除いて総数を出します。"
+      ],
+      "reasoning_why": "総当たりで全部を追うと二重に数えやすいので、規則や対称性を使った方が安全だからです。",
+      "lesson_points": [],
+      "ocr_notes": [],
+      "problem_core": "一部で見つけたB型の配置規則を使って、全体の総数へ広げる問題です。",
+      "learning_map_hint": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "合同な図形（小5）"
+        ],
+        "cross_skills": [
+          "規則性を見つける",
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "図形の数え上げ"
+        ]
+      }
+    }
+  },
+  {
+    "display_id": "問4(3)",
+    "problem_code": "q4_3",
+    "sort_order": 15,
+    "section_id": "part4",
+    "section_title": "大問4 正六角形7個の図形",
+    "source": {
+      "question_pdf": "data/raw/pdfs/開成中学校/2026/問題/2026、算数、開成中学校、問題.pdf",
+      "answer_pdf": "data/raw/pdfs/開成中学校/2026/回答/2026、算数、開成中学校、解答.pdf",
+      "page_images": [
+        {
+          "label": "10ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0010.png"
+        },
+        {
+          "label": "11ページ",
+          "path": "data/derived/page-images/開成中学校/2026/問題/2026、算数、開成中学校、問題/page-0011.png"
+        }
+      ],
+      "answer_images": [
+        {
+          "label": "解答画像確認",
+          "path": "data/derived/page-images/開成中学校/2026/回答/2026、算数、開成中学校、解答/page-0001.png"
+        }
+      ],
+      "verification": "match"
+    },
+    "source_pack": {
+      "prompt_summary": "AともBとも合同でない2種類の例と、それぞれの面積・個数。",
+      "official_answer": "同じ",
+      "verified_answer": "5cm²・48個 と 4cm²・60個",
+      "explanation_summary": "図の例そのものは複数ありえますが、合同類ごとの面積と総数は固定で、`5cm²・48個` と `4cm²・60個` です。",
+      "knowledge_points": [
+        "図形を合同類ごとにまとめること。",
+        "例示図そのものと、本当に答えるべき内容を分けること。",
+        "面積と個数をセットで整理すること。"
+      ],
+      "method_outline": [
+        "A型・B型以外の三角形を、形の種類ごとに分類します。",
+        "各合同類について、小さい三角形何個分かで面積を出します。",
+        "図全体でその型の個数を数えます。"
+      ],
+      "reasoning_why": "1つずつ別々に見ると数が多すぎますが、形の種類にまとめると面積も個数も整理しやすく、例示図に引っぱられずに済むからです。",
+      "lesson_points": [],
+      "ocr_notes": [
+        "解答画像の図をそのまま唯一解と思わないこと。別の位置に同じ合同類の例を描いても正解になりえます。"
+      ],
+      "problem_core": "A型・B型以外の三角形を合同類ごとにまとめ、面積と個数をセットで出す問題です。",
+      "learning_map_hint": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "合同な図形（小5）",
+          "面積（小5）"
+        ],
+        "cross_skills": [
+          "規則性を見つける",
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "図形の数え上げ"
+        ]
+      }
+    }
+  }
+]

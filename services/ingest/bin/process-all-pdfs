@@ -1,0 +1,5 @@
+#!/bin/zsh
+set -euo pipefail
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+INGEST_ROOT=$(cd "$SCRIPT_DIR/.." && pwd)
+exec python3 "$INGEST_ROOT/src/process_all_pdfs.py" "$@"
