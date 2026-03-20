@@ -1,0 +1,350 @@
+{
+  "status": "reviewed",
+  "expected_problem_count": 4,
+  "records": [
+    {
+      "display_id": "問1",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "1ページ",
+            "path": "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/page-0001.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答1ページ",
+            "path": "data/derived/page-images/開成中学校/2022/回答/2022、算数、開成中学校、解答/page-0001.png"
+          },
+          {
+            "label": "解答2ページ",
+            "path": "data/derived/page-images/開成中学校/2022/回答/2022、算数、開成中学校、解答/page-0002.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/ocr/page-0001.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/ocr/page-0001.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "大問1は小問集合で、ロープと円の図形整理、9で割った余り、4人のサイコロ積が4の倍数になる条件整理を含みます。",
+        "official_answer": "（1）OCR要再確認 （2）5 （3）999通り （4）①4.9298倍 ②54.9度",
+        "explanation_summary": "図形・余り・場合の数の3系統を、それぞれ条件を式や場合分けに直して処理する小問集合です。",
+        "problem_core": "複数分野の小問を、条件整理で処理する小問集合です。",
+        "ocr_notes": [
+          "question page-0001 は誌面順の都合で小問(4)が先にOCRされています。",
+          "小問(1)の解答 OCR は崩れていますが、大問分類には影響しません。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.mixed.condition-translation-mini-set",
+          "name": "条件整理の小問集合"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.area",
+            "name": "面積"
+          },
+          {
+            "code": "unit.counting",
+            "name": "場合の数"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.81,
+        "rationale": "大問1は図形、余り、数え上げを含む小問集合です。単一単元よりも、条件を式や場合分けに落とし込む整理が共通の負荷になっています。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "文字と式（小6）",
+        "supporting_units": [
+          "面積（小5）",
+          "倍数と約数（小5）",
+          "場合の数（小6）"
+        ],
+        "cross_skills": [
+          "条件整理",
+          "図にする",
+          "場合分け"
+        ],
+        "advanced_labels": []
+      },
+      "evidence": {
+        "problem_core": "複数分野の小問を、条件整理で処理する小問集合です。",
+        "official_answer": "（1）OCR要再確認 （2）5 （3）999通り （4）①4.9298倍 ②54.9度",
+        "notes": "page-0001。誌面上は小問(4)が先に配置されていますが、大問1全体としては図形・余り・場合の数の混合セットです。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "2022年度は問1を小問集合としてまとめて固定。",
+        "residual_uncertainty": "小問(1)の OCR 数字は崩れていますが、大問単位の分類軸には影響しません。"
+      }
+    },
+    {
+      "display_id": "問2",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "2ページ",
+            "path": "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/page-0002.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答2ページ",
+            "path": "data/derived/page-images/開成中学校/2022/回答/2022、算数、開成中学校、解答/page-0002.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/ocr/page-0002.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/ocr/page-0002.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "円すいを底面に平行な3平面で4ブロックに分け、相似比から各ブロックや積み上げ立体の体積比・表面積比を求めます。",
+        "official_answer": "（1）体積の比 7:37、表面積の比 11:39 （2）体積の比 5:11、表面積の比 4:7",
+        "explanation_summary": "相似な円すい列として比をそろえ、体積は3乗比、表面積は2乗比で整理して差や和を取る問題です。",
+        "problem_core": "相似な円すいの切り分けから、体積比と表面積比を求める問題です。",
+        "ocr_notes": [
+          "page-0002 と解答 page-0002 を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.solid.cone-similarity-ratios",
+          "name": "円すい分割の相似比"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.solid",
+            "name": "立体"
+          },
+          {
+            "code": "advanced.相似",
+            "name": "相似"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.94,
+        "rationale": "底面に平行な切断でできる相似な円すいたちを比でそろえ、各部分の体積比と表面積比を組み立てる問題です。立体の把握よりも、相似比から量の比へ落とす整理が核です。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "立体（小5）",
+        "supporting_units": [
+          "体積（小5）",
+          "比（小6）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "同じ土俵にそろえる",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "相似"
+        ]
+      },
+      "evidence": {
+        "problem_core": "相似な円すいの切り分けから、体積比と表面積比を求める問題です。",
+        "official_answer": "（1）体積の比 7:37、表面積の比 11:39 （2）体積の比 5:11、表面積の比 4:7",
+        "notes": "page-0002。相似比1:2:3:4から、各ブロックの差分と積み上げ後の外側面積を求めます。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "相似比主軸で固定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問3",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "3ページ",
+            "path": "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/page-0003.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答2ページ",
+            "path": "data/derived/page-images/開成中学校/2022/回答/2022、算数、開成中学校、解答/page-0002.png"
+          },
+          {
+            "label": "解答3ページ",
+            "path": "data/derived/page-images/開成中学校/2022/回答/2022、算数、開成中学校、解答/page-0003.png"
+          },
+          {
+            "label": "解答4ページ",
+            "path": "data/derived/page-images/開成中学校/2022/回答/2022、算数、開成中学校、解答/page-0004.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/ocr/page-0003.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/ocr/page-0003.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "縦2×横7のマス目で、上下左右に隣り合わないように黒マスを置く暗号の総数や条件付き個数を数えます。",
+        "official_answer": "（1）7か所、2種類 （2）（ア）解説参照 （イ）8種類 （ウ）102種類 （3）（ア）解説参照 （イ）17種類 （ウ）577種類",
+        "explanation_summary": "列を追加したときの遷移を表で管理し、条件付きの配置数を場合分けして数える問題です。",
+        "problem_core": "隣接禁止のマス塗りを、場合分けと漸化的な整理で数える問題です。",
+        "ocr_notes": [
+          "page-0003 と解答 page-0002〜0004 を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.counting.nonadjacent-grid-fill",
+          "name": "隣接禁止のマス塗り数え上げ"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.counting",
+            "name": "場合の数"
+          },
+          {
+            "code": "skill.patterns",
+            "name": "規則性"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.97,
+        "rationale": "左右上下に隣り合わない配置条件を保ったまま、列を増やしたときの状態数を管理する問題です。主眼は数え上げですが、解法の実体は規則性を見つけた漸化的整理にあります。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "変わり方（小4）"
+        ],
+        "cross_skills": [
+          "表にする",
+          "場合分け",
+          "規則性を見つける"
+        ],
+        "advanced_labels": [
+          "順列・組合せ"
+        ]
+      },
+      "evidence": {
+        "problem_core": "隣接禁止のマス塗りを、場合分けと漸化的な整理で数える問題です。",
+        "official_answer": "（1）7か所、2種類 （2）（ア）解説参照 （イ）8種類 （ウ）102種類 （3）（ア）解説参照 （イ）17種類 （ウ）577種類",
+        "notes": "page-0003。列追加時の遷移を表で追い、7列までの総数577種類に到達します。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "場合の数 + 規則性で確定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問4",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "4ページ",
+            "path": "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/page-0004.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答4ページ",
+            "path": "data/derived/page-images/開成中学校/2022/回答/2022、算数、開成中学校、解答/page-0004.png"
+          },
+          {
+            "label": "解答5ページ",
+            "path": "data/derived/page-images/開成中学校/2022/回答/2022、算数、開成中学校、解答/page-0005.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/ocr/page-0004.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2022/問題/2022、算数、開成中学校、問題/ocr/page-0004.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "5分遅れの時計について、正しい時計との針の位置関係から一致時刻や角度条件の時刻差を求めます。",
+        "official_answer": "（1）1時10と10/11分 （2）1時7と21/22分 （3）6分40秒",
+        "explanation_summary": "針の位置関係を角度差と相対的な動きに直し、5.5度/分の差で一致や2倍条件を処理する時計算です。",
+        "problem_core": "遅れた時計と正しい時計の針の位置関係を、相対的な動きで処理する問題です。",
+        "ocr_notes": [
+          "page-0004 と解答 page-0004〜0005 を突き合わせて確認済みです。",
+          "OCR の分数表記は崩れていますが、解説本文の式から時刻を復元しました。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.speed.slow-clock-angles",
+          "name": "遅れ時計の時計算"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.speed",
+            "name": "速さ"
+          },
+          {
+            "code": "advanced.時計算",
+            "name": "時計算"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.95,
+        "rationale": "短針と長針の位置関係を角度差に直し、1分あたりの変化量で一致や2倍条件の時刻を出す問題です。表面上は角度ですが、解法の中心は相対速度としての時計算です。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "速さ（小6）",
+        "supporting_units": [
+          "角とその大きさ（小4）",
+          "比例（小5）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理",
+          "同じ土俵にそろえる"
+        ],
+        "advanced_labels": [
+          "時計算"
+        ]
+      },
+      "evidence": {
+        "problem_core": "遅れた時計と正しい時計の針の位置関係を、相対的な動きで処理する問題です。",
+        "official_answer": "（1）1時10と10/11分 （2）1時7と21/22分 （3）6分40秒",
+        "notes": "page-0004。長針と短針の差は1分あたり5.5度で変化し、(3)は図形の相似で時間差をまとめます。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "角度問題ではあるが、検索軸としては時計算主軸で固定。",
+        "residual_uncertainty": ""
+      }
+    }
+  ]
+}

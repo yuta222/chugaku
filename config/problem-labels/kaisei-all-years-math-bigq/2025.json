@@ -1,0 +1,212 @@
+{
+  "status": "reviewed",
+  "records": [
+    {
+      "display_id": "問1",
+      "status": "reviewed",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.mixed.unit-conversion-and-ratio",
+          "name": "単位換算と割合"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.ratio",
+            "name": "割合"
+          },
+          {
+            "code": "unit.measurement",
+            "name": "量の単位"
+          }
+        ],
+        "difficulty": {
+          "level": 3,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.8,
+        "rationale": "大問1は小問集合ですが、学習上の核は割合を使った残金整理です。冒頭の計算は単位換算の確認で、主たる負荷は割合条件を式に直して逆算するところにあります。",
+        "uncertainty": "単位換算を主に立てる見方もありますが、検索・復習の軸としては割合寄りに置きました。"
+      },
+      "learning_map": {
+        "main_unit": "割合（小5）",
+        "supporting_units": [
+          "量の単位（小6）",
+          "式と計算の順序（小4）"
+        ],
+        "cross_skills": [
+          "同じ土俵にそろえる",
+          "逆に考える",
+          "条件整理"
+        ],
+        "advanced_labels": []
+      },
+      "evidence": {
+        "problem_core": "単位をそろえた計算と、割合で表された残金条件を逆算する小問集合です。",
+        "official_answer": "（1）0.815a （2）205円",
+        "notes": "page-0004 の 2 小問。後半は所持金の変化を割合で追う逆算型。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "2025 年度の手動見直しで割合主体に補正。",
+        "residual_uncertainty": "単位換算小問も含むため、検索用途によっては複合ラベル化の余地があります。"
+      }
+    },
+    {
+      "display_id": "問2",
+      "status": "reviewed",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.counting.rectangle-partition-optimization",
+          "name": "長方形分割の最適化"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.counting",
+            "name": "場合の数"
+          },
+          {
+            "code": "advanced.maximum",
+            "name": "最大最小"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.9,
+        "rationale": "長方形の切り分け方を比較しながらポイントを評価し、条件を満たす配置や最大値を探す問題です。面積そのものより、分割パターンの整理と最適化が中心です。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "面積（小5）",
+          "変わり方（小4）"
+        ],
+        "cross_skills": [
+          "場合分け",
+          "条件整理",
+          "図にする"
+        ],
+        "advanced_labels": [
+          "最大最小"
+        ]
+      },
+      "evidence": {
+        "problem_core": "長方形の分割パターンを整理し、条件を満たす配置や最大ポイントを求める問題です。",
+        "official_answer": "（1）図2: 23、図3: 35 （2）例あり （3）46",
+        "notes": "page-0005。8 個の長方形の置き方を漏れなく比べる整理が核。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "2025 年度の手動見直しで『場合の数 + 最適化』に固定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問3",
+      "status": "reviewed",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.speed.multi-route-travelers",
+          "name": "複数ルートの旅人算"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.speed",
+            "name": "速さ"
+          },
+          {
+            "code": "skill.graph-reading",
+            "name": "グラフ読解"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.95,
+        "rationale": "複数の道を規則的に行き来する 3 人の動きを、出会い・追いつき・到着回数から復元する重めの速さ問題です。核心は旅人算としての関係整理で、グラフはその整理を支える道具です。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "速さ（小6）",
+        "supporting_units": [
+          "比例（小5）",
+          "変わり方（小4）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "表にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "旅人算",
+          "グラフ"
+        ]
+      },
+      "evidence": {
+        "problem_core": "複数ルート上の 3 人の動きを、出会い方とグラフを手がかりに復元する問題です。",
+        "official_answer": "（2）1回目・3回目・5回目 （3）3:1:1 （4）5:3:2",
+        "notes": "page-0006 と page-0007。速さ比と道の比を同時に詰める典型的な旅人算。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "2025 年度の手動見直しで旅人算主軸に固定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問4",
+      "status": "reviewed",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.solid.cross-section-reconstruction",
+          "name": "三角柱切断の復元"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.solid",
+            "name": "立体"
+          },
+          {
+            "code": "unit.ratio",
+            "name": "比"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.94,
+        "rationale": "真上から見えた角度情報と補助三角形を使って、三角柱の切断面の実際の形を復元する問題です。主役は立体の見え方と対応関係の整理で、比や合同はその復元を支える材料です。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "立体（小5）",
+        "supporting_units": [
+          "合同な図形（小5）",
+          "比（小6）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "切断",
+          "見取り図"
+        ]
+      },
+      "evidence": {
+        "problem_core": "立体の切断面を、上から見た角度情報と補助図形を使って復元する問題です。",
+        "official_answer": "（1）ア90、イ60、ウ30、エ2 ほか （2）合同な三角形を作図",
+        "notes": "page-0008 と page-0009。立体の見え方から実形を戻す復元型。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "2025 年度の手動見直しで立体主軸に固定。",
+        "residual_uncertainty": ""
+      }
+    }
+  ]
+}

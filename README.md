@@ -189,3 +189,8 @@ Codex は subagent を自動起動しないため、明示的に「spawn」「de
 - [SQL たたき台](/Users/yutazack/workspace/yotsuyaotsuka-pdf/docs/math-taxonomy-schema.sql)
 - [Codex Subagents Quickstart](/Users/yutazack/workspace/Python/yotsuyaotsuka-pdf/docs/codex-subagents.md)
 - [問題分類前段フロー設計図](/Users/yutazack/workspace/Python/yotsuyaotsuka-pdf/docs/problem-classification-review-blueprint.md)
+
+## 全年度分類
+
+- 開成中学校の算数を `2026 -> 2005` の順で大問単位に draft 分類するには `python3 scripts/build_kaisei_all_years_math_bigq_review.py` を実行します。
+- 生成先は [index.md](/Users/yutazack/workspace/Python/yotsuyaotsuka-pdf/data/derived/problem-labels/kaisei-all-years-math-bigq/index.md) と [index.json](/Users/yutazack/workspace/Python/yotsuyaotsuka-pdf/data/derived/problem-labels/kaisei-all-years-math-bigq/index.json) です。

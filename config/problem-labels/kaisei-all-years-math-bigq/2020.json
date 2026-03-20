@@ -1,0 +1,344 @@
+{
+  "status": "reviewed",
+  "expected_problem_count": 4,
+  "records": [
+    {
+      "display_id": "問1",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "1ページ",
+            "path": "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/page-0001.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答1ページ",
+            "path": "data/derived/page-images/開成中学校/2020/回答/2020、算数、開成中学校、解答/page-0001.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/ocr/page-0001.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/ocr/page-0001.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "2台のロボットのカード順による進み方と、距離グラフからロボットAのカード列候補を復元します。",
+        "official_answer": "<12314>, <23411>, <42311>, <13412>",
+        "explanation_summary": "距離差の増減を1分ごとの速さ差に読み替え、あり得るカードの組み合わせを絞るグラフ復元問題です。",
+        "problem_core": "距離グラフの増減から、2台のロボットの進み方を復元する問題です。",
+        "ocr_notes": [
+          "page-0001 と解答 page-0001 を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.speed.distance-graph-reconstruction",
+          "name": "距離グラフから進み方を復元"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.speed",
+            "name": "速さ"
+          },
+          {
+            "code": "skill.graph-reading",
+            "name": "グラフ読解"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.93,
+        "rationale": "2台の距離差の増減を、各1分間の速さ差として読み替えて進み方候補を復元する問題です。核心は速さ関係をグラフから逆に読むところにあります。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "速さ（小6）",
+        "supporting_units": [
+          "変わり方（小4）"
+        ],
+        "cross_skills": [
+          "グラフを読む",
+          "表にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "グラフ"
+        ]
+      },
+      "evidence": {
+        "problem_core": "距離グラフの増減から、2台のロボットの進み方を復元する問題です。",
+        "official_answer": "<12314>, <23411>, <42311>, <13412>",
+        "notes": "page-0001。距離差の目盛り変化を毎分15cm単位に読み替えて候補を絞ります。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "2020年度の問1は速さグラフ復元として固定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問2",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "2ページ",
+            "path": "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/page-0002.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答1ページ",
+            "path": "data/derived/page-images/開成中学校/2020/回答/2020、算数、開成中学校、解答/page-0001.png"
+          },
+          {
+            "label": "解答2ページ",
+            "path": "data/derived/page-images/開成中学校/2020/回答/2020、算数、開成中学校、解答/page-0002.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/ocr/page-0002.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/ocr/page-0002.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "半径の異なる2円上の点B, C と、円間を直線移動できる点Pについて、開始時刻や同伴時間を調整して合流時刻と最短道のりを求めます。",
+        "official_answer": "（1）解説参照 （2）76分後 （3）94.4m",
+        "explanation_summary": "円周上の角度差を相対速度でそろえ、円間移動と同伴移動を組み合わせて最短時刻と道のりを決める問題です。",
+        "problem_core": "円周上を動く点との合流条件を、角度差と相対速度で整理する問題です。",
+        "ocr_notes": [
+          "page-0002 と解答 page-0001〜0002 を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.speed.circular-meeting-schedule",
+          "name": "円周上の合流時刻調整"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.speed",
+            "name": "速さ"
+          },
+          {
+            "code": "advanced.旅人算",
+            "name": "旅人算"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.94,
+        "rationale": "点Bと点Cの角速度差を使って、点Pが合流できる開始時刻や待機時間を調整する問題です。表面は円周上の動きですが、解法の中心は相対速度の整理にあります。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "速さ（小6）",
+        "supporting_units": [
+          "比例（小5）",
+          "正多角形と円周の長さ（小5）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理",
+          "逆に考える"
+        ],
+        "advanced_labels": [
+          "旅人算"
+        ]
+      },
+      "evidence": {
+        "problem_core": "円周上を動く点との合流条件を、角度差と相対速度で整理する問題です。",
+        "official_answer": "（1）解説参照 （2）76分後 （3）94.4m",
+        "notes": "page-0002。Bは毎分6度、Cは毎分2度で進むとして角度差を追います。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "円周上の動点だが、主軸は速さとして固定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問3",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "3ページ",
+            "path": "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/page-0003.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答2ページ",
+            "path": "data/derived/page-images/開成中学校/2020/回答/2020、算数、開成中学校、解答/page-0002.png"
+          },
+          {
+            "label": "解答3ページ",
+            "path": "data/derived/page-images/開成中学校/2020/回答/2020、算数、開成中学校、解答/page-0003.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/ocr/page-0003.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/ocr/page-0003.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "硬貨6種類・おつりなし・1人10枚までというルールのもとで、28円の持ち方や、作れない金額の個数を数えます。",
+        "official_answer": "（1）（ア）4通り （イ）9人 （2）解説参照。300円まで6通り、1000円まで129通り",
+        "explanation_summary": "まず少額の表を作って最低枚数の規則をつかみ、その上に50円・100円・500円を足して作れない金額の個数を数える問題です。",
+        "problem_core": "硬貨枚数制限のもとで、持ち方と作れない金額を数え上げる問題です。",
+        "ocr_notes": [
+          "page-0003 と解答 page-0002〜0003 を突き合わせて確認済みです。",
+          "空欄①〜⑧の細部は解説本文から補えますが、review-first では主要結論を優先しました。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.counting.coin-limit-cases",
+          "name": "硬貨枚数制限の数え上げ"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.counting",
+            "name": "場合の数"
+          },
+          {
+            "code": "unit.expression",
+            "name": "文字と式"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.91,
+        "rationale": "硬貨の持ち方を数えるだけでなく、最低枚数表を土台に『作れない金額』の個数まで数える問題です。主役は場合の数で、規則を式の形にまとめる整理が支えになります。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "大きい数（小4）",
+          "文字と式（小6）"
+        ],
+        "cross_skills": [
+          "表にする",
+          "場合分け",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "つるかめ算"
+        ]
+      },
+      "evidence": {
+        "problem_core": "硬貨枚数制限のもとで、持ち方と作れない金額を数え上げる問題です。",
+        "official_answer": "（1）（ア）4通り （イ）9人 （2）解説参照。300円まで6通り、1000円まで129通り",
+        "notes": "page-0003。0〜49円の最低枚数表を作り、それに50円単位の追加を重ねて数えます。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "コイン問題だが、検索軸としては制限付き数え上げで固定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問4",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "4ページ",
+            "path": "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/page-0004.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答3ページ",
+            "path": "data/derived/page-images/開成中学校/2020/回答/2020、算数、開成中学校、解答/page-0003.png"
+          },
+          {
+            "label": "解答4ページ",
+            "path": "data/derived/page-images/開成中学校/2020/回答/2020、算数、開成中学校、解答/page-0004.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/ocr/page-0004.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2020/問題/2020、算数、開成中学校、問題/ocr/page-0004.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "窓穴のある立方体小屋に光が入るとき、床面の影から他の面に当たる部分を展開図上で復元します。",
+        "official_answer": "解説参照",
+        "explanation_summary": "床面の影がどの窓穴由来かを見分け、光線方向と対称性を使って展開図上の他面へ写す問題です。",
+        "problem_core": "展開図と対称性を使って、立体内の光の当たり方を復元する問題です。",
+        "ocr_notes": [
+          "page-0004 と解答 page-0003〜0004 を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.solid.light-on-net",
+          "name": "展開図で追う光の当たり方"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.solid",
+            "name": "立体"
+          },
+          {
+            "code": "advanced.展開図",
+            "name": "展開図"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.95,
+        "rationale": "床面の斜線から光線方向を特定し、その方向を保ったまま他面への当たり方を展開図に戻す問題です。中心は立体と展開図の対応づけで、対称性はその補助として効きます。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "立体（小5）",
+        "supporting_units": [
+          "対称な図形（小6）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "展開図"
+        ]
+      },
+      "evidence": {
+        "problem_core": "展開図と対称性を使って、立体内の光の当たり方を復元する問題です。",
+        "official_answer": "解説参照",
+        "notes": "page-0004。窓穴1と窓穴2が直線ECを軸として対称という整理が鍵です。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "影の問題だが、主軸は展開図と立体対応で固定。",
+        "residual_uncertainty": ""
+      }
+    }
+  ]
+}

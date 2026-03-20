@@ -1,0 +1,263 @@
+{
+  "status": "reviewed",
+  "expected_problem_count": 3,
+  "records": [
+    {
+      "display_id": "問1",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "2ページ",
+            "path": "data/derived/page-images/開成中学校/2021/問題/2021、算数、開成中学校、問題/page-0002.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答1ページ",
+            "path": "data/derived/page-images/開成中学校/2021/回答/2021、算数、開成中学校、解答/page-0001.png"
+          },
+          {
+            "label": "解答2ページ",
+            "path": "data/derived/page-images/開成中学校/2021/回答/2021、算数、開成中学校、解答/page-0002.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2021/問題/2021、算数、開成中学校、問題/ocr/page-0002.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2021/問題/2021、算数、開成中学校、問題/ocr/page-0002.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "大問1は小問集合で、曜日計算、頂点から引く直線本数による分割数、正六角形内の三角形面積、9998分の1の小数位取りを扱います。",
+        "official_answer": "（1）土曜日 （2）612個 （3）2.25cm² （4）48位=8、56位=3、96位=6",
+        "explanation_summary": "周期や増え方の規則を見抜き、必要な場面だけ図形や式に落として処理する小問集合です。",
+        "problem_core": "規則や増え方を整理して処理する小問集合です。",
+        "ocr_notes": [
+          "page-0002 は誌面の都合で小問(3)が先にOCRされています。",
+          "問題の表示順は official answer に合わせて (1)〜(4) に読み替えています。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.mixed.pattern-finding-mini-set",
+          "name": "規則整理の小問集合"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.pattern-change",
+            "name": "変わり方"
+          },
+          {
+            "code": "unit.area",
+            "name": "面積"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.85,
+        "rationale": "曜日、分割数、小数位取りはいずれも増え方や周期の整理が中心で、図形小問も分割パターンの見方が核になります。単一単元よりも『規則を見つけて整理する』負荷が共通しています。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "変わり方（小4）",
+        "supporting_units": [
+          "面積（小5）",
+          "倍数と約数（小5）",
+          "場合の数（小6）"
+        ],
+        "cross_skills": [
+          "規則性を見つける",
+          "条件整理",
+          "図にする"
+        ],
+        "advanced_labels": []
+      },
+      "evidence": {
+        "problem_core": "規則や増え方を整理して処理する小問集合です。",
+        "official_answer": "（1）土曜日 （2）612個 （3）2.25cm² （4）48位=8、56位=3、96位=6",
+        "notes": "page-0002。曜日の周期、直線追加で増える部分数、正六角形の面積分割、小数位取りの4題です。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "2021年度の問1は規則性ベースの小問集合として固定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問2",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "3ページ",
+            "path": "data/derived/page-images/開成中学校/2021/問題/2021、算数、開成中学校、問題/page-0003.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答2ページ",
+            "path": "data/derived/page-images/開成中学校/2021/回答/2021、算数、開成中学校、解答/page-0002.png"
+          },
+          {
+            "label": "解答3ページ",
+            "path": "data/derived/page-images/開成中学校/2021/回答/2021、算数、開成中学校、解答/page-0003.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2021/問題/2021、算数、開成中学校、問題/ocr/page-0003.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2021/問題/2021、算数、開成中学校、問題/ocr/page-0003.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "6cm立方体内で指定点を頂点とする三角すいや四角すいを考え、補助立体を引き算して体積を求めます。",
+        "official_answer": "（1）36cm³ （2）60cm³ （3）42cm³",
+        "explanation_summary": "底面積×高さ÷3で直接出せるものと、立方体全体から余分な立体を引くものを使い分ける体積問題です。",
+        "problem_core": "立方体内の角すいを分割・引き算で捉える体積問題です。",
+        "ocr_notes": [
+          "page-0003 と解答 page-0002〜0003 を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.volume.cube-pyramids",
+          "name": "立方体内の角すい体積"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.volume",
+            "name": "体積"
+          },
+          {
+            "code": "unit.solid",
+            "name": "立体"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.95,
+        "rationale": "指定点を頂点とする角すいの体積を、底面積と高さで直接出すか、立方体全体から余分な立体を引いて出すかで整理する問題です。中心は体積の分割・合成にあります。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "体積（小5）",
+        "supporting_units": [
+          "立体（小5）",
+          "比（小6）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "見取り図"
+        ]
+      },
+      "evidence": {
+        "problem_core": "立方体内の角すいを分割・引き算で捉える体積問題です。",
+        "official_answer": "（1）36cm³ （2）60cm³ （3）42cm³",
+        "notes": "page-0003。立方体216cm³から補助立体を差し引く整理が中心です。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "立体よりも体積計算の整理を主軸に据えて固定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問3",
+      "status": "reviewed",
+      "source": {
+        "page_images": [
+          {
+            "label": "4ページ",
+            "path": "data/derived/page-images/開成中学校/2021/問題/2021、算数、開成中学校、問題/page-0004.png"
+          }
+        ],
+        "answer_images": [
+          {
+            "label": "解答3ページ",
+            "path": "data/derived/page-images/開成中学校/2021/回答/2021、算数、開成中学校、解答/page-0003.png"
+          },
+          {
+            "label": "解答4ページ",
+            "path": "data/derived/page-images/開成中学校/2021/回答/2021、算数、開成中学校、解答/page-0004.png"
+          }
+        ],
+        "ocr_text_paths": [
+          "data/derived/page-images/開成中学校/2021/問題/2021、算数、開成中学校、問題/ocr/page-0004.txt"
+        ],
+        "ocr_json_paths": [
+          "data/derived/page-images/開成中学校/2021/問題/2021、算数、開成中学校、問題/ocr/page-0004.json"
+        ],
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "prompt_summary": "0と1のカードを順に出して審判カードと合わせる操作を繰り返し、最終スコアやB君の手札候補数を求めます。",
+        "official_answer": "（1）0101 （2）011010 （3）110110 （4）000111, 010111 （5）12通り",
+        "explanation_summary": "操作全体を2進法の足し算として読み替え、最終スコア列から逆にB君の初期手札を絞る問題です。",
+        "problem_core": "カード操作の規則を2進法の足し算に読み替えて処理する問題です。",
+        "ocr_notes": [
+          "page-0004 と解答 page-0003〜0004 を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.counting.binary-card-operation",
+          "name": "2進法のカード操作"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.counting",
+            "name": "場合の数"
+          },
+          {
+            "code": "skill.patterns",
+            "name": "規則性"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.94,
+        "rationale": "手札操作の結果をそのまま追うのではなく、2進法の足し算として構造化してから逆算・数え上げを行う問題です。核心は規則性の発見と場合分けです。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "変わり方（小4）",
+          "文字と式（小6）"
+        ],
+        "cross_skills": [
+          "規則性を見つける",
+          "表にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "2進法"
+        ]
+      },
+      "evidence": {
+        "problem_core": "カード操作の規則を2進法の足し算に読み替えて処理する問題です。",
+        "official_answer": "（1）0101 （2）011010 （3）110110 （4）000111, 010111 （5）12通り",
+        "notes": "page-0004。公式解説でも『2進法のたし算』として整理してから逆算しています。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "カード操作ではあるが、検索軸としては規則性を伴う数え上げに固定。",
+        "residual_uncertainty": ""
+      }
+    }
+  ]
+}

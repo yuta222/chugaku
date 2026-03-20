@@ -1,0 +1,159 @@
+{
+  "status": "reviewed",
+  "expected_problem_count": 3,
+  "records": [
+    {
+      "display_id": "問1",
+      "status": "reviewed",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.mixed.condition-translation-mini-set",
+          "name": "条件整理の小問集合"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.expression",
+            "name": "文字と式"
+          },
+          {
+            "code": "skill.condition-organizing",
+            "name": "条件整理"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.82,
+        "rationale": "大問1は 2024 を作る式、金属棒の重さ比較、転がる正三角形の 3 題からなる小問集合です。単一単元よりも、条件を数えやすい形に言い換える整理が共通の核になっています。",
+        "uncertainty": "小問ごとに使う単元が異なるため、復習軸としては『条件整理』を前面に出しました。"
+      },
+      "learning_map": {
+        "main_unit": "文字と式（小6）",
+        "supporting_units": [
+          "量の単位（小6）",
+          "面積（小5）"
+        ],
+        "cross_skills": [
+          "条件整理",
+          "図にする",
+          "規則性を見つける"
+        ],
+        "advanced_labels": []
+      },
+      "evidence": {
+        "problem_core": "性質の異なる 3 題を、条件を数えやすい形に直しながら処理する小問集合です。",
+        "official_answer": "問1(1) 解答例あり / 問1(2) 11.5cm, 425g / 問1(3) 43.96cm, X=14, Y=7",
+        "notes": "published page の『大問1 小問集合』に合わせて 1 つの big-question として扱う。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "published page を正本に 3 題構成へ補正。",
+        "residual_uncertainty": "小問集合なので、検索 UI では小問分割表示の余地があります。"
+      }
+    },
+    {
+      "display_id": "問2",
+      "status": "reviewed",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.counting.card-stack-filtering",
+          "name": "カード操作の数え上げ"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.counting",
+            "name": "場合の数"
+          },
+          {
+            "code": "advanced.順列・組合せ",
+            "name": "順列・組合せ"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.96,
+        "rationale": "机に残るカード列を『その時点の最小値更新』として読み替え、初期状態の並びを数え上げる問題です。主眼は場合の数で、順番条件を抜き出す整理が核心です。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "変わり方（小4）",
+          "大きい数（小4）"
+        ],
+        "cross_skills": [
+          "条件整理",
+          "場合分け"
+        ],
+        "advanced_labels": [
+          "順列・組合せ"
+        ]
+      },
+      "evidence": {
+        "problem_core": "机に残る列を固定し、差し込み位置で初期状態の通り数を数える問題です。",
+        "official_answer": "問2(1) <7431> / 問2(2) 列挙と通り数 / 問2(3) 560通り",
+        "notes": "published page の『大問2 カード操作』をそのまま採用。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "published page と OCR の双方で card 操作 problem と確認。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問3",
+      "status": "reviewed",
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.solid.net-and-cross-section",
+          "name": "直方体切断と展開図"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.solid",
+            "name": "立体"
+          },
+          {
+            "code": "advanced.切断",
+            "name": "切断"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.97,
+        "rationale": "見取図と展開図を往復しながら、元の面・対応点・断面・欠けた面・面積を追う立体問題です。中心は立体の対応づけで、切断や展開図はそのまま入試発展ラベルになります。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "立体（小5）",
+        "supporting_units": [
+          "面積（小5）",
+          "比（小6）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "切断",
+          "展開図"
+        ]
+      },
+      "evidence": {
+        "problem_core": "見取図と展開図を対応づけながら、切断後の形と面積を決める問題です。",
+        "official_answer": "問3(1) ②③④ / 問3(2)〜(4) 図示 / 問3(5) 1.8cm²",
+        "notes": "published page の『大問3 直方体の切断』を正本に採用。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "published page と公式解答の構成が一致しているため 3 大問で固定。",
+        "residual_uncertainty": ""
+      }
+    }
+  ]
+}

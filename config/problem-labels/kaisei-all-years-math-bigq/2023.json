@@ -1,0 +1,323 @@
+{
+  "status": "reviewed",
+  "expected_problem_count": 5,
+  "records": [
+    {
+      "display_id": "問1",
+      "status": "reviewed",
+      "source": {
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "official_answer": "（1）61分10秒 （2）144m （3）255m",
+        "explanation_summary": "最後の100mにかかる時間と昼寝60分を分け、ゴール5秒差からカメの到着までの時間を出して全体距離を逆算する。",
+        "problem_core": "休憩をはさむ2人の動きを時間差から復元する速さ問題です。",
+        "ocr_notes": [
+          "問1の公式解答は解答OCRの先頭にまとまっているため、manual overrideで補いました。",
+          "page-0004 の本文と解答 page-0001 を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.speed.rabbit-turtle-overtake",
+          "name": "ウサギとカメの追い越し算"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.speed",
+            "name": "速さ"
+          },
+          {
+            "code": "advanced.旅人算",
+            "name": "旅人算"
+          }
+        ],
+        "difficulty": {
+          "level": 4,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.96,
+        "rationale": "昼寝で止まる区間を含む2人の動きを、残り100mとゴール5秒差からつなぐ問題です。主眼は道のり・時間・速さの関係整理で、最後は逆算で全体の道のりを戻します。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "速さ（小6）",
+        "supporting_units": [
+          "比例（小5）",
+          "変わり方（小4）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "逆に考える",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "旅人算"
+        ]
+      },
+      "evidence": {
+        "problem_core": "休憩をはさむ2人の動きを時間差から復元する速さ問題です。",
+        "official_answer": "（1）61分10秒 （2）144m （3）255m",
+        "notes": "page-0004。最後の100mと昼寝60分を切り分け、追い越し時刻と全体距離を戻します。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "2023年度の手動見直しで、問1を独立した速さ問題として確定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問2",
+      "status": "reviewed",
+      "source": {
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "official_answer": "2分10秒後、3分12秒後",
+        "explanation_summary": "正六角形全体の面積を6とおき、三角形や四角形の面積比からQの位置を決めてから、周上を進む時間に戻す。",
+        "problem_core": "正六角形を動く点Qの位置を、面積比2:1になる条件から決める問題です。",
+        "ocr_notes": [
+          "page-0006 の図形条件と解答 page-0002 の面積比整理を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.area.hexagon-moving-point-ratio",
+          "name": "正六角形の動点面積比"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.area",
+            "name": "面積"
+          },
+          {
+            "code": "unit.speed",
+            "name": "速さ"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.9,
+        "rationale": "問われているのは時刻ですが、核心は直線PQで分けた2部分の面積比を三角形や四角形の面積関係に落とすことにあります。周上の移動は、その位置を時間に戻すための補助です。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "面積（小5）",
+        "supporting_units": [
+          "比（小6）",
+          "速さ（小6）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "同じ土俵にそろえる",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "相似"
+        ]
+      },
+      "evidence": {
+        "problem_core": "正六角形を動く点Qの位置を、面積比2:1になる条件から決める問題です。",
+        "official_answer": "2分10秒後、3分12秒後",
+        "notes": "page-0006。面積を6とおく置き換えと、対応する三角形の面積比でQの位置を決めます。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "時間付き動点ですが、主軸は面積比と判断して補正。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問3",
+      "status": "reviewed",
+      "source": {
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "official_answer": "（1）解答図参照 （2）797.5cm³",
+        "explanation_summary": "2つの切断面で落ちる三角柱と、その重なり部分を引き算して、頂点Gを含む立体の体積を出す。",
+        "problem_core": "2つの平面で切った立方体から、残る立体の形と体積を復元する問題です。",
+        "ocr_notes": [
+          "page-0008 と page-0009、解答 page-0002 を突き合わせて切断対象を確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.solid.cube-double-plane-cut",
+          "name": "立方体の二平面切断"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.solid",
+            "name": "立体"
+          },
+          {
+            "code": "advanced.切断",
+            "name": "切断"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.93,
+        "rationale": "2つの切断面を同時に追い、頂点Gを含む立体の形と体積を復元する問題です。中心は立体の対応関係と切断後の見取り図の把握で、体積計算はその後段にあります。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "立体（小5）",
+        "supporting_units": [
+          "体積（小5）",
+          "比（小6）"
+        ],
+        "cross_skills": [
+          "図にする",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "切断",
+          "見取り図"
+        ]
+      },
+      "evidence": {
+        "problem_core": "2つの平面で切った立方体から、残る立体の形と体積を復元する問題です。",
+        "official_answer": "（1）解答図参照 （2）797.5cm³",
+        "notes": "page-0008 と page-0009。切り取られる三角柱と重なり部分を整理して体積を出します。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "立体主軸で固定し、体積は supporting に回しました。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問4",
+      "status": "reviewed",
+      "source": {
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "official_answer": "（1）6秒後: PはC, QはE, RはA （2）18秒後 （3）解答図参照 （4）445秒後",
+        "explanation_summary": "出会うたびに向きが反転する3点の動きを6秒ごとの状態変化として整理し、1周期18秒と出会い回数の規則で処理する。",
+        "problem_core": "円周上を動く3点の出会い方を、周期性で整理する速さ問題です。",
+        "ocr_notes": [
+          "page-0010 と page-0011、解答 page-0003 の周期整理を突き合わせて確認済みです。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.speed.circular-three-point-cycle",
+          "name": "円周上3点の出会い周期"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.speed",
+            "name": "速さ"
+          },
+          {
+            "code": "advanced.周期算",
+            "name": "周期算"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.92,
+        "rationale": "3点が出会うたびに向きを反転する挙動を、6秒ごとの状態変化として捉え直す問題です。土台は速さですが、解法の核は周期性の発見と状態の整理にあります。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "速さ（小6）",
+        "supporting_units": [
+          "変わり方（小4）",
+          "倍数と約数（小5）"
+        ],
+        "cross_skills": [
+          "表にする",
+          "規則性を見つける",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "周期算"
+        ]
+      },
+      "evidence": {
+        "problem_core": "円周上を動く3点の出会い方を、周期性で整理する速さ問題です。",
+        "official_answer": "（1）6秒後: PはC, QはE, RはA （2）18秒後 （3）解答図参照 （4）445秒後",
+        "notes": "page-0010 と page-0011。6秒単位の状態循環と、1周期18秒・PとRの出会い4回を使います。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "速さと周期の複合だが、検索軸としては速さ主軸に固定。",
+        "residual_uncertainty": ""
+      }
+    },
+    {
+      "display_id": "問5",
+      "status": "reviewed",
+      "source": {
+        "verification": "manual_reviewed_from_ocr_and_answer"
+      },
+      "source_pack": {
+        "official_answer": "ア30、イ30、ウ120、エ30、オ36、カ126、キ492",
+        "explanation_summary": "各位の和と繰り上がりを場合分けし、前の結果を次の桁へ引き継いで通り数を積み上げる。",
+        "problem_core": "桁ごとの和と繰り上がり条件を使って、AとBの組を数え上げる問題です。",
+        "ocr_notes": [
+          "page-0012 と page-0013、解答 page-0001 のア〜キを突き合わせて確認済みです。",
+          "page-0014 は白紙です。"
+        ]
+      },
+      "search_labels": {
+        "primary_label": {
+          "code": "p.math.counting.carry-digit-pairs",
+          "name": "桁上がりつき数え上げ"
+        },
+        "secondary_labels": [
+          {
+            "code": "unit.counting",
+            "name": "場合の数"
+          },
+          {
+            "code": "unit.large-number",
+            "name": "大きい数"
+          }
+        ],
+        "difficulty": {
+          "level": 5,
+          "scale": "exam_math_bigq_5_v1"
+        },
+        "confidence": 0.89,
+        "rationale": "各位の和と繰り上がり条件を分けて、前段の結果を次の桁へつなぐ数え上げ問題です。主眼は場合の数ですが、位取りと桁上がりの理解が土台になります。",
+        "uncertainty": ""
+      },
+      "learning_map": {
+        "main_unit": "場合の数（小6）",
+        "supporting_units": [
+          "大きい数（小4）",
+          "文字と式（小6）"
+        ],
+        "cross_skills": [
+          "表にする",
+          "場合分け",
+          "条件整理"
+        ],
+        "advanced_labels": [
+          "順列・組合せ"
+        ]
+      },
+      "evidence": {
+        "problem_core": "桁ごとの和と繰り上がり条件を使って、AとBの組を数え上げる問題です。",
+        "official_answer": "ア30、イ30、ウ120、エ30、オ36、カ126、キ492",
+        "notes": "page-0012 と page-0013。1の位から順に和と繰り上がりを場合分けし、前問の結果を再利用して通り数を積み上げます。"
+      },
+      "review": {
+        "verdict": "agree",
+        "notes": "位取りの理解は必要だが、主軸は桁ごとの数え上げとして確定。",
+        "residual_uncertainty": ""
+      }
+    }
+  ]
+}
