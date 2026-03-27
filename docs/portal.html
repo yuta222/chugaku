@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中学受験 出題傾向分析ポータル</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;background:#f7f7f5;color:#1a1a1a;line-height:1.6}
+.hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:white;padding:48px 20px 40px;text-align:center}
+.hero h1{font-size:26px;margin:0 0 8px;font-weight:800;letter-spacing:0.02em}
+.hero .sub{font-size:14px;color:rgba(255,255,255,0.7);margin:0}
+.hero .stats{display:flex;gap:24px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.hero .stat{text-align:center}
+.hero .stat-num{font-size:28px;font-weight:700}
+.hero .stat-label{font-size:11px;color:rgba(255,255,255,0.6)}
+.container{max-width:900px;margin:0 auto;padding:28px 16px 60px}
+.section{margin-bottom:32px}
+.section-title{font-size:16px;font-weight:700;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid #e0e0e0;display:flex;align-items:center;gap:8px}
+.section-title .icon{font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{display:block;text-decoration:none;color:inherit;background:white;border:1px solid #e8e8e6;border-radius:10px;padding:18px 20px;transition:box-shadow .15s,transform .1s}
+.card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-1px)}
+.card-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;color:white;display:inline-block;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em}
+.card-title{font-size:15px;font-weight:700;margin-bottom:4px}
+.card-desc{font-size:13px;color:#888;line-height:1.5}
+.card-meta{font-size:11px;color:#bbb;margin-top:8px}
+.badge-new{background:#e53935}
+.badge-interactive{background:#1565c0}
+.badge-profile{background:#2e7d32}
+.badge-analysis{background:#6a4f8a}
+.badge-school{background:#a73c34}
+.sub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.sub-card{display:block;text-decoration:none;color:inherit;background:white;border:1px solid #e8e8e6;border-radius:8px;padding:12px 14px;font-size:13px;transition:box-shadow .15s}
+.sub-card:hover{box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.sub-card .label{font-weight:600;color:#333}
+.sub-card .meta{font-size:11px;color:#aaa;margin-top:2px}
+.footer{text-align:center;font-size:11px;color:#bbb;margin-top:32px;padding-top:16px;border-top:1px solid #eee}
+@media(max-width:600px){
+  .hero h1{font-size:22px}
+  .hero .stat-num{font-size:22px}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>中学受験 出題傾向分析ポータル</h1>
+  <p class="sub">624校×4教科の入試データを多角的に分析</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">624</div><div class="stat-label">対応校</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">教科</div></div>
+    <div class="stat"><div class="stat-num">16,584</div><div class="stat-label">分類済み問題</div></div>
+    <div class="stat"><div class="stat-num">10,727</div><div class="stat-label">クイズ問題</div></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ===== インタラクティブ機能 ===== -->
+  <div class="section">
+    <div class="section-title"><span class="icon">&#9889;</span> インタラクティブ機能</div>
+    <div class="grid">
+      <a href="quiz/index.html" class="card">
+        <span class="card-badge badge-new">NEW</span>
+        <div class="card-title">志望校傾向4択クイズ</div>
+        <div class="card-desc">志望校を選んで出題傾向の知識をチェック。6パターン・10問出題で正答率を可視化。</div>
+        <div class="card-meta">612校 / 10,727問</div>
+      </a>
+      <a href="difficulty-map/index.html" class="card">
+        <span class="card-badge badge-new">NEW</span>
+        <div class="card-title">全校難易度マップ</div>
+        <div class="card-desc">626校×4教科の平均難易度ヒートマップ。ソート・フィルタ・検索付き。</div>
+        <div class="card-meta">626校 / 4教科</div>
+      </a>
+      <a href="coverage/index.html" class="card">
+        <span class="card-badge badge-new">NEW</span>
+        <div class="card-title">単元カバー率チェッカー</div>
+        <div class="card-desc">志望校の頻出単元に対する習得度をチェック。重点対策リストを自動生成。</div>
+        <div class="card-meta">626校 / localStorage保存</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== 併願校分析 ===== -->
+  <div class="section">
+    <div class="section-title"><span class="icon">&#128200;</span> 併願校分析</div>
+    <div class="grid">
+      <a href="hengan/index.html" class="card">
+        <span class="card-badge badge-interactive">併願</span>
+        <div class="card-title">併願校分析ダッシュボード</div>
+        <div class="card-desc">学校一覧・単元別・2校比較・検索・ドリルを搭載した総合分析ツール。</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== 教科別プロファイル ===== -->
+  <div class="section">
+    <div class="section-title"><span class="icon">&#128218;</span> 教科別プロファイル一覧</div>
+    <div class="grid">
+      <a href="school-math-profiles/index.html" class="card">
+        <span class="card-badge badge-profile">算数</span>
+        <div class="card-title">算数プロファイル</div>
+        <div class="card-desc">全校の算数出題傾向・難易度・頻出単元を1枚にまとめたカード。</div>
+      </a>
+      <a href="school-science-profiles/index.html" class="card">
+        <span class="card-badge badge-profile">理科</span>
+        <div class="card-title">理科プロファイル</div>
+        <div class="card-desc">全校の理科出題傾向・難易度・頻出単元を1枚にまとめたカード。</div>
+      </a>
+      <a href="school-social-profiles/index.html" class="card">
+        <span class="card-badge badge-profile">社会</span>
+        <div class="card-title">社会プロファイル</div>
+        <div class="card-desc">全校の社会出題傾向・難易度・頻出単元を1枚にまとめたカード。</div>
+      </a>
+      <a href="school-japanese-profiles/index.html" class="card">
+        <span class="card-badge badge-profile">国語</span>
+        <div class="card-title">国語プロファイル</div>
+        <div class="card-desc">全校の国語出題傾向・難易度・頻出単元を1枚にまとめたカード。</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== 比較分析 ===== -->
+  <div class="section">
+    <div class="section-title"><span class="icon">&#128202;</span> 比較分析</div>
+    <div class="grid">
+      <a href="cross-school-analysis/index.html" class="card">
+        <span class="card-badge badge-analysis">横断</span>
+        <div class="card-title">教科横断分析</div>
+        <div class="card-desc">複数校を教科横断で比較するダッシュボード。</div>
+      </a>
+      <a href="boys-gosanke-math-comparison/index.html" class="card">
+        <span class="card-badge badge-analysis">比較</span>
+        <div class="card-title">男子御三家 算数比較</div>
+        <div class="card-desc">開成・麻布・武蔵の算数出題傾向を比較。</div>
+      </a>
+      <a href="girls-top-math-comparison/index.html" class="card">
+        <span class="card-badge badge-analysis">比較</span>
+        <div class="card-title">女子トップ校 算数比較</div>
+        <div class="card-desc">桜蔭・女子学院・雙葉など女子校の算数比較。</div>
+      </a>
+      <a href="girls-upper-secondary-math-comparison/index.html" class="card">
+        <span class="card-badge badge-analysis">比較</span>
+        <div class="card-title">女子上位校 算数比較</div>
+        <div class="card-desc">女子上位校群の算数出題傾向比較。</div>
+      </a>
+      <a href="three-school-math-comparison/index.html" class="card">
+        <span class="card-badge badge-analysis">比較</span>
+        <div class="card-title">3校 算数比較</div>
+        <div class="card-desc">選択した3校の算数を並列比較。</div>
+      </a>
+      <a href="kaisei-komaba-kaijo-math-comparison/index.html" class="card">
+        <span class="card-badge badge-analysis">比較</span>
+        <div class="card-title">開成・駒東・海城 算数比較</div>
+        <div class="card-desc">男子上位3校の算数出題傾向を詳細比較。</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== 個別学校（開成） ===== -->
+  <div class="section">
+    <div class="section-title"><span class="icon">&#127979;</span> 開成 個別ページ</div>
+    <div class="sub-grid">
+      <a href="kaisei-math-trends/index.html" class="sub-card">
+        <div class="label">開成 算数トレンド</div>
+        <div class="meta">年度推移分析</div>
+      </a>
+      <a href="kaisei-2026/index.html" class="sub-card">
+        <div class="label">開成 2026 総合</div>
+      </a>
+      <a href="kaisei-2026-math/index.html" class="sub-card">
+        <div class="label">開成 2026 算数</div>
+      </a>
+      <a href="kaisei-2026-science/index.html" class="sub-card">
+        <div class="label">開成 2026 理科</div>
+      </a>
+      <a href="kaisei-2026-social/index.html" class="sub-card">
+        <div class="label">開成 2026 社会</div>
+      </a>
+      <a href="kaisei-2026-japanese/index.html" class="sub-card">
+        <div class="label">開成 2026 国語</div>
+      </a>
+      <a href="kaisei-2024/index.html" class="sub-card">
+        <div class="label">開成 2024 総合</div>
+      </a>
+      <a href="kaisei-2024-math/index.html" class="sub-card">
+        <div class="label">開成 2024 算数</div>
+      </a>
+      <a href="kaisei-2024-science/index.html" class="sub-card">
+        <div class="label">開成 2024 理科</div>
+      </a>
+      <a href="kaisei-2024-social/index.html" class="sub-card">
+        <div class="label">開成 2024 社会</div>
+      </a>
+      <a href="kaisei-2024-japanese/index.html" class="sub-card">
+        <div class="label">開成 2024 国語</div>
+      </a>
+      <a href="kaisei-2025-social/index.html" class="sub-card">
+        <div class="label">開成 2025 社会</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">中学受験 出題傾向分析ポータル — 624校×4教科</div>
+</div>
+
+</body>
+</html>
